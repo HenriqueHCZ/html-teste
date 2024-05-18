@@ -1,0 +1,202 @@
+/* MENU LATERAL--------------------------------------------------------------------------- */
+.menu_lateral {
+    width: 200px;
+    background-color: var(--cor_verde_escuro);
+    color: #000000;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+.menu_lateral ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu_lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu_lateral ul li {
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+}
+.menu_lateral ul li:hover {
+    background-color: var(--cor_verde_claroescurin);
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+.menu_lateral_lista {
+    margin-top: 30px;
+}
+.menu_lateral_lista_sobre {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.menu_lateral_lista_sobre.abrir {
+    max-height: 200px;
+    transition: max-height 0.8s ease;
+}
+#menu_botao {
+    margin: 0px 20px 0px 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_lateral_icone {
+    cursor: pointer;
+    color: black;
+}
+#menu_botao_menu {
+    margin: 35px 0px 0px 30px;
+    transition: 1s;
+}
+.menu_lateral_lista_login {
+    margin-bottom: 2rem;
+}
+#menu_lateral_lista_login_icone {
+    margin-right: 10px;
+}
+/*<MENU-HORIZONTAL>------------------------------------------------------------------------------- */
+
+.barra_navegacao_menu_horizontal {
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor_verde_escuro);
+    display: flex;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-items: center;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-delay: 0s;
+}
+.barra_navegacao_menu_horizontal ul li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.barra_navegacao_menu_horizontal ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.barra_navegacao_menu_horizontal ul li a:hover {
+    background-color: var(--cor_verde_claroescurin);
+}
+/*<MENU-HORIZONTAL-SOBRE>------------------------------------------------------------------------------- */
+
+.barra_navegacao_menu_horizontal ul li ul.menu_horizontal_sobre li {
+    display: block;
+}
+.barra_navegacao_menu_horizontal ul li ul.menu_horizontal_sobre {
+    background: var(--cor_verde_escuro);
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--cor_verde_claroescurin);
+    display: none;
+}
+.barra_navegacao_menu_horizontal ul li ul.menu_horizontal_sobre a {
+    padding: 20px 25px;
+    text-align: start;
+    border-radius: 0px;
+}
+.barra_navegacao_menu_horizontal ul li ul.menu_horizontal_sobre li:first-child a {
+    border-top-right-radius: 10px;
+}
+
+.barra_navegacao_menu_horizontal ul li ul.menu_horizontal_sobre li:last-child a {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.barra_navegacao_menu_horizontal ul li:hover .menu_horizontal_sobre {
+    display: block;
+}
+/*</MENU-HORIZONTAL-SOBRE>------------------------------------------------------------------------------- */
+
+/*<MENU-HORIZONTAL-LOGO>------------------------------------------------------------------------------- */
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0px 15px 0px 15px;
+}
+.logo2 {
+    display: none;
+}
+.barra_navegacao_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*</MENU-HORIZONTAL-LOGO>------------------------------------------------------------------------------- */
+
+/*<MENU-HORIZONTAL-LOGIN>------------------------------------------------------------------------------- */
+.menu_horizontal_login {
+    margin-right: 50px;
+    margin-left: auto;
+    border-radius: 25px;
+    padding: 5px;
+}
+.menu_horizontal_login:hover {
+    background-color: var(--cor_verde_claroescurin);
+    transition: 0.5s ease;
+}
+.menu_horizontal_login_icone {
+    width: 40px;
+    height: 40px;
+}
+/*</MENU-HORIZONTAL-LOGIN>------------------------------------------------------------------------------- */
+
+/*</MENU-HORIZONTAL>------------------------------------------------------------------------------- */
+
+/*<CORPO>---------------------------------------------------------------------------------------------*/
+p {
+    margin: 5rem 5rem 10rem 5rem;
+}
+/*</CORPO>---------------------------------------------------------------------------------------------*/
+/*<MEDIA-QUERY>--------------------------------------------------------------------------------------*/
+@media (max-width: 1010px) {
+    .barra_navegacao_menu_horizontal ul,
+    .barra_navegacao_menu_horizontal li {
+        display: none;
+        transition: 1s;
+    }
+    .barra_navegacao_menu_horizontal {
+        height: 70px;
+        margin: 0px;
+    }
+    .barra_navegacao_menu_horizontal .logo {
+        display: none;
+        transition: 1s;
+    }
+    .barra_navegacao_menu_horizontal .logo2 {
+        display: block;
+        height: 30px;
+        transition: 1s;
+    }
+
+    .barra_navegacao_menu_horizontal #menu_botao {
+        display: block;
+        transition: 1s;
+    }
+
+    @media (min-width: 1010px) {
+        .menu_lateral {
+            left: -200px;
+        }
+    }
+}
+/*/<MEDIA-QUERY>--------------------------------------------------------------------------------------*/

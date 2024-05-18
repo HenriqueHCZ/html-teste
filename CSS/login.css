@@ -1,0 +1,212 @@
+:root {
+    --corum: #c3dfd6;
+    --cordois: #365d4a;
+    --cortres: #fff;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    background-image: url(../IMGS/curva.png);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    min-height: 100vh;
+}
+body {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    background-color: white;
+    border: var(--cordois) 3px solid;
+    position: absolute;
+    width: 450px;
+    height: auto;
+    margin: 0;
+    padding: 10px 40px 0px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+.container h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--cordois);
+    text-align: center;
+    font-size: 33px;
+}
+.container .entrada {
+    position: relative;
+}
+.container .entrada input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--cordois);
+    outline: none;
+    background: transparent;
+}
+.container .entrada label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bolder;
+    color: var(--cordois);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.container .entrada input:focus ~ label,
+.container .entrada input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #869980;
+    font-size: 12px;
+}
+#botao {
+    width: 40%;
+    height: 50px;
+    display: block;
+    border-radius: 30px;
+    background-color: var(--cordois);
+    color: #ffffff;
+    margin: 0px auto auto auto;
+    cursor: pointer;
+}
+#entrar {
+    text-decoration: none;
+}
+.container entrar:hover {
+    color: #000000;
+}
+#pata {
+    width: 300px;
+    height: 300px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../IMGS/pata.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    color: var(--cortres);
+}
+#textos {
+    margin-left: 24%;
+    margin-top: 7px;
+    top: 22%;
+    right: 14%;
+    position: relative;
+    margin-right: 5%;
+    font-size: 14px;
+}
+#pata:hover {
+    transition: 0.3s;
+    text-shadow: 1px 1px 15px;
+    zoom: 101%;
+}
+#botao:hover {
+    background-color: #869980;
+    transform: rotate(22%);
+    color: #000000;
+}
+#textcadastro {
+    font-size: 26px;
+    width: 300px;
+    text-align: start;
+    text-decoration: underline 3px;
+    align-self: center;
+}
+.cadastro {
+    width: 600px;
+    height: 350px;
+    margin: 0px 80px auto auto;
+    display: flex;
+}
+.conteudo {
+    margin-bottom: 50px;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+.logo2 {
+    display: none;
+    text-align: center;
+}
+.logo2 hr {
+    color: var(--cordois);
+}
+.logo-imagem2 {
+    width: 100px;
+    height: 100px;
+}
+.logo-imagem {
+    width: 100px;
+    height: 100px;
+    margin: 15px 0px 0px 15px;
+}
+.criar {
+    font-size: 12px;
+    text-decoration: underline 1px;
+    text-align: center;
+    margin: auto;
+    width: 150;
+    display: none;
+}
+.criar a {
+    color: var(--cordois);
+}
+/*Media------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    html {
+        background-color: var(--cordois);
+        background-image: none;
+    }
+    .conteudo {
+        margin: 0px;
+        height: 100vh;
+        display: flex;
+    }
+    .container {
+        margin: 0px auto;
+        position: relative;
+        align-self: center;
+
+    }
+    .logo {
+        display: none;
+    }
+    .logo2 {
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    .cadastro {
+        display: none;
+    }
+    .criar {
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 1250px) {
+    .cadastro {
+        display: none;
+    }
+    .container {
+        margin: 0 auto;
+        position: relative;
+    }
+    .criar {
+        display: block;
+    }
+}
+@media (min-width: 1250px) {
+    .container {
+        margin: 0px 0px 0px 150px;
+    }
+}

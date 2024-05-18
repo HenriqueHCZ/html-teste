@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PetMania</title>
+        <script src="https://kit.fontawesome.com/10750f6abb.js" crossorigin="anonymous"></script>
+        <!--<CSS>-------------------------------------------------------------------------------------------------------------------------->
+        <span class="-----------------CSS-------------------">
+            <link rel="stylesheet" href="CSS/variaveis.css" />
+            <link rel="stylesheet" href="CSS/index.css" />
+            <link rel="stylesheet" href="CSS/slider.css" />
+        </span>
+        <!--<CSS>-------------------------------------------------------------------------------------------------------------------------->
+    </head>
+    <body onclick="fecharMenu(event)">
+        <header>
+            <!--<MENU-LATERAL>--------------------------------------------------------------------------------------------------------------------->
+            <div class="menu_lateral" id="menu">
+                <ul>
+                    <i onclick="funcmenu()" id="menu_botao_menu" style="color: #fff" class="fa-solid fa-bars fa-2xl fa-fw"></i>
+                    <div class="menu_lateral_lista">
+                        <ul>
+                            <li class="menu_lateral_lista_login">
+                                <a href="login.html"><i id="menu_lateral_lista_login_icone" class="fa-solid fa-user fa-xl"></i>Login / Cadastro</a>
+                            </li>
+                            <li><a href="#">Página Inicial</a></li>
+                            <li><a href="#">Agendamentos</a></li>
+                            <li><a href="#">Exames</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li onclick="funcsobre()" id="sobre"><a href="#">Sobre ⮟</a></li>
+                            <div class="menu_lateral_lista_sobre" id="menu_lista_sobre">
+                                <ul>
+                                    <li><a href="#">A Clinica</a></li>
+                                    <li><a href="#">Os Serviços</a></li>
+                                    <li><a href="#">Os Profissionais</a></li>
+                                </ul>
+                            </div>
+                            <li class="menu_lateral_lista_contato" id="contato"><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <!--</MENU-LATERAL>-------------------------------------------------------------------------------------------------------------------->
+            <!--<NAV-BAR>-------------------------------------------------------------------------------------------------------------------------->
+            <nav class="barra_navegacao">
+                <div class="barra_navegacao_menu_horizontal">
+                    <i onclick="funcmenu()" id="menu_botao" class="fa-solid fa-bars fa-2xl" style="color: #fff"></i>
+
+                    <div class="barra_navegacao_logo">
+                        <a href="index.html"><img src="IMGS/Logo.png" alt="" class="logo" /><img src="IMGS/Logo2.png" alt="" class="logo2" /></a>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li><a href="#">Agendamentos</a></li>
+                        <li><a href="#">Exames</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li>
+                            <a href="#">Sobre ⮟</a>
+                            <ul class="menu_horizontal_sobre">
+                                <li><a href="#">A Clinica</a></li>
+                                <li><a href="#">Os Serviços</a></li>
+                                <li><a href="#">Os Profissionais</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                    <div class="menu_horizontal_login">
+                        <a href="login.html"><img class="menu_horizontal_login_icone" src="IMGS/Login.png" alt="" /></a>
+                    </div>
+                </div>
+            </nav>
+            <!--</NAV-BAR>------------------------------------------------------------------------------------------------------------------------->
+        </header>
+
+        <div class="conteudo">
+            <!--<SLIDER>-------------------------------------------------------------------------------------------------------------------------->
+            <div class="slider">
+                <div class="slides">
+                    <!--Radio Button-->
+                    <input type="radio" name="radio-btn" id="radio1" />
+                    <input type="radio" name="radio-btn" id="radio2" />
+                    <input type="radio" name="radio-btn" id="radio3" />
+                    <input type="radio" name="radio-btn" id="radio4" />
+                    <!--Radio Button-->
+
+                    <!--Slide Images-->
+                    <div class="slide first">
+                        <img src="IMGS/IMG1.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="IMGS/IMG2.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="IMGS/IMG3.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="IMGS/IMG4.jpg" alt="" />
+                    </div>
+                    <!--Slide Images-->
+
+                    <!--Navigation-auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <!--</SLIDER>-------------------------------------------------------------------------------------------------------------------------->
+        </div>
+        <!--<JAVASCRIPT>-------------------------------------------------------------------------------------------------------------------------->
+        <span class="-----------------JS-------------------">
+            <script src="SCRIPT/script_index.js"></script>
+        </span>
+        <!--</JAVASCRIPT>-------------------------------------------------------------------------------------------------------------------------->
+    </body>
+</html>

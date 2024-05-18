@@ -1,0 +1,15 @@
+:root {
+    --cor_verde_claro: #c3dfd6;
+    --cor_verde_claroescurin: #98b6ac;
+    --cor_verde_escuro: #265d4a;
+    --cor_verde_escuro2: #365d4a;
+    --cor_verde_escuroescuro: #1a4133;
+    --cor_cinza_claro: #e0e8e8;
+    --cortres: #fff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: monospace;
+}
