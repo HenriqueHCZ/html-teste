@@ -25,7 +25,7 @@ body {
     width: 450px;
     height: auto;
     margin: 0;
-    padding: 10px 40px 0px 40px;
+    padding: 40px;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
@@ -163,21 +163,32 @@ body {
     color: var(--cordois);
 }
 /*Media------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 100vw;
+    }
+    body {
+        display: flex;
+    }
+    .conteudo {
+        margin: 0px auto;
+        align-self: center;
+    }
+}
 @media (max-width: 768px) {
     html {
         background-color: var(--cordois);
         background-image: none;
     }
-    .conteudo {
-        margin: 0px;
-        height: 100vh;
+    body {
         display: flex;
     }
-    .container {
+    .conteudo {
         margin: 0px auto;
-        position: relative;
         align-self: center;
-
+    }
+    .container {
+        position: relative;
     }
     .logo {
         display: none;

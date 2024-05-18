@@ -24,7 +24,7 @@ body {
     position: absolute;
     width: 450px;
     margin: 0px;
-    padding: 10px 40px 0px 40px;
+    padding: 40px;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 20px;
@@ -146,6 +146,7 @@ body {
     width: 100px;
     height: 100px;
     margin: 15px 0px 0px 15px;
+
 }
 .criar {
     font-size: 12px;
@@ -159,27 +160,33 @@ body {
     color: var(--cordois);
 }
 /*Media------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 450px) {
+    .container {
+        width: 100vw;
+    }
+}
 @media only screen and (max-width: 768px) {
     html {
         background-color: var(--cordois);
         background-image: none;
     }
-    .conteudo {
-        margin: 0px;
+    body {
         display: flex;
     }
-    .container {
+    .conteudo {
         margin: 0px auto;
-        position: relative;
         align-self: center;
-
+    }
+    .container {
+        position: relative;
     }
     .logo {
         display: none;
+        transition: 1s;
+        opacity: 0%;
     }
     .logo2 {
         display: block;
-        margin: 0px auto 0px auto ;
     }
     .cadastro {
         display: none;
@@ -203,6 +210,5 @@ body {
 @media only screen and (min-width: 1300px) {
     .container {
         margin: 0px 0px 0px 150px;
-        
     }
 }
